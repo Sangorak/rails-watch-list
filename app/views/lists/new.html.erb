@@ -1,0 +1,7 @@
+<h1>List creation</h1>
+
+<%= simple_form_for [@list] do |l| %>
+  <%= l.label :name %>
+  <%= l.text_field :name %>
+  <%= l.submit "Create your list", class: "btn btn-primary" %>
+<% end %>
